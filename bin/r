@@ -1,0 +1,13 @@
+#!/bin/bash
+
+pwd
+
+cd ../restapi-client/target
+
+#java -jar restapi-client-1.0-SNAPSHOT.jar -h
+
+#java -jar restapi-client-1.0-SNAPSHOT.jar -protocol http -hostname localhost -payload '{"firstName":"sven","lastName":"svennis","email":"sven.svennis@company.com"}' -action 'post' -url '/api/v1/' -log debug -count 1 -sleep 1000 -entity 'customer' -port 8080
+
+java -jar restapi-client-1.0-SNAPSHOT.jar -protocol http -hostname localhost -payload '{"firstName":"sven","lastName":"svennis","email":"sven.svennis@company.com"}' -action 'post' -url '/api/v1/' -count 0 -log debug -sleep 1000 -entity 'customer' -port 8080
+
+#java -jar restapi-client-1.0-SNAPSHOT.jar -protocol http -hostname localhost -action 'get' -url '/api/v1/' -count 1 -log debug -sleep 1000 -entity 'fraud-check/1' -port 8081

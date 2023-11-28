@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd ../restapi-client/
+
+mvn clean
+
+mvn package 
+
+mvn javadoc:javadoc
+
+

@@ -1,0 +1,1 @@
+mvn archetype:generate -DgroupId=cc.tools.restapi.client -DartifactId=restapi-client -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=fals
